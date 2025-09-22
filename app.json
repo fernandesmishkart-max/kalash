@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Kalash Closet",
+    "slug": "kalash-closet",
+    "version": "1.0.0",
+    "main": "App.js",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you upload clothing items to your closet."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "This app uses location to provide weather-based outfit suggestions."
+        }
+      ]
+    ]
+  }
+}
